@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS: databinding</title>
+</head>
+<body>
+<div id="app">
+    <a v-bind:href="url">{{ url }}</a>
+    <h1 v-bind:data="id">{{ id }}</h1>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            id: 30,
+            url: 'https://vuejs.org'
+        }
+    })
+</script>
+</body>
+</html>

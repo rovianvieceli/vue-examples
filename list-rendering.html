@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS: Start</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="post in posts" v-bind:key="post.id">{{ post.body }}</li>
+    </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            posts: [
+                {
+                    "id": "f8fb2a68-d4e5-470c-b5e1-258e59a3d018",
+                    "body": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+                },
+                {
+                    "id": "7cd5f333-bbfb-4d0c-9dc8-d6d68043dadd",
+                    "body": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante.",
+                },
+                {
+                    "id": "0216e543-4a5f-4552-a9a1-51d9e3f7fbf2",
+                    "body": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+                },
+                {
+                    "id": "b835d5ae-f172-47bf-add6-87282a22b696",
+                    "body": "Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.",
+                },
+                {
+                    "id": "11f01b50-6d31-455d-b0d7-5a39a892fc64",
+                    "body": "Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
+                }
+            ]
+        }
+    })
+</script>
+</body>
+</html>
